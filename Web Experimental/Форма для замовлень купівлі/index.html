@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>New order form</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header>
+	<div class="box1">
+		<a>
+			<img src="sidebar.png" width="25px">
+		</a>
+		<a>
+			<img src="basket.png" width="25px">
+		</a>
+	</div>
+	<div class="box2">
+		<img src="logo.png" width="25px">
+	</div>
+	<div class="box1">
+		<button>UK</button>
+		<button>$</button>
+		<a>
+			<img src="account.png" width="15px">
+		</a>
+	</div>
+  </header>
+  
+  <div class="card">
+	<div class="card_top">
+	  	<button>
+			<img src="arrow.png" width=20px>
+		</button>
+		<h5>Нове замовлення</h5>
+		<div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="car_info">
+			<img src="car.png" width="150px"></img>
+			<div>
+				<p>BMW X5 M50i</p>
+		        <p id="gold">150&nbsp;000$</p>
+			</div>
+		</div>
+
+		
+		<h3>Місце отримання авто</h3>
+		<div>
+			<input type="radio" id="receivingLocation1" name="location" form="new order" checked>
+			<label for="receivingLocation1">Дилерський центр</label>
+		</div>
+		<div class="hidencontainer">
+			<input class="manual" type="radio" id="receivingLocation2" name="location" form="new order">
+			<label for="receivingLocation2">Доставити у точку призначення</label>
+			<div class="hiden1">
+				<input type="text" form="new order" placeholder="Пункт призначення">
+			</div>
+		</div>
+		
+		
+		<h3>Спосіб оплати</h3>
+		<div>
+			<input type="radio" id="payway1" name="pay" form="new order" checked>
+			<label for="payway1">Оплата через код при отриманні</label>
+		</div>
+		<div class="hidencontainer">
+			<input class="manual", type="radio" id="payway2" name="pay" form="new order">
+			<label for="payway2">Сплатити до отримання карткою</label>
+			<div class="hiden2">
+				<div class="cardnum">
+					<input type="list" form="new order" placeholder="Доступні картки">
+				</div>
+				<div class="creditcarddata">
+					<input type="number" form="new order" placeholder="CVV" min="0" max="999">
+					<input type="text" form="new order" placeholder="mm/yy" required pattern="[0-9]{2}/[0-9]{2}">
+					<input type="number" form="new order" placeholder="PIN Code" min="0" max="9999">
+				</div>
+			</div>
+		</div>
+	</div>
+	<input id="sub" type="submit" form="new order" value="Обробка замовлення">
+  </div>
+  
+</body>

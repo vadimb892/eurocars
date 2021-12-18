@@ -1,0 +1,242 @@
+@font-face{
+	font-family:"Gogh-ExtraBold";
+	src:url("../fonts/Gogh-ExtraBold.otf") format("opentype");
+	font-style:normal;
+	font-weight:normal;
+}
+@font-face{
+	font-family:"Gogh-ExtraBoldItalic";
+	src:url("../fonts/Gogh-ExtraBoldItalic.otf") format("opentype");
+	font-style:normal;
+	font-weight:normal;
+}
+
+body{
+	background: #21033F;
+	color:white;
+	margin:0;
+}
+
+header{
+	height:60px;
+	width:auto;
+	background:#21033F;
+	position:-webkit-sticky;
+	position:sticky;
+	top:0;
+	z-index:100;
+}
+
+header div{
+	position:relative;
+	float:left;
+	display:flex;
+	justify-content:space-around;
+	flex-basis:auto;
+	align-items:center;
+	flex-direction:row;
+	text-align:center;
+}
+
+header div.box1{
+	padding: 20px 2% 10px 2%;
+	width:29.5%;
+}
+
+header div.box2{
+	padding: 15px 0% 10px 0%;
+	width:33%;
+}
+
+header div a{
+	position:relative;
+	display:flex;
+	justify-content:space-around;
+	flex-basis:auto;
+	flex-direction:row;
+}
+
+header div button{
+	position:relative;
+	color:white;
+	font-family:Gogh;
+	background-color:transparent;
+	background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	font-family:Gogh-ExtraBold;
+}
+
+.card{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	position:relative;
+	border-radius:20px;
+	background: #7C54ED; 
+	padding-bottom:25px;
+	margin:5%;
+}
+
+.card_top{
+	display:flex;
+	position:relative;
+	justify-content:space-around;
+	align-items:center;
+	height:60px;
+	min-width:310.5px;
+}
+
+.card_top img{
+	padding:0;
+}
+
+.card_top h5{
+	position:relative;
+	margin:0;
+	padding-left:12%;
+	padding-right:12%;
+	font-family:Gogh-ExtraBoldItalic;
+	font-size:14px;
+}
+
+.card_top button{
+	position:relative;
+	color:white;
+	background-color:transparent;
+	background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.card .wrapper{
+	display:flex;
+	flex-wrap:wrap;
+	position:relative;
+	padding:0 4%;
+	flex-grow:2;
+	max-width:310.5px;
+}
+
+.card .wrapper .card_column{
+	display:flex;
+	position:relative;
+	flex-direction:column;
+	align-items:stretch;
+}
+
+.card .wrapper .card_column p{
+	width:110px;
+	margin:17px auto;
+}
+
+.card .wrapper .card_column input{
+	position:relative;
+	width:140px;
+	height:19px;
+	margin:14px auto;
+	border:2px solid;
+	border-radius: 15px;
+	border-color: white;
+	background:transparent;
+	padding-left:9px;
+	font-family:Gogh-ExtraBoldItalic;
+	font-size:14px;
+    color:white;
+}
+
+.card .wrapper p{
+	font-family:Gogh-ExtraBoldItalic;
+	font-size:14px;
+}
+
+.card #sub{
+	position:relative;
+	width:92%;
+	height:30px;
+	margin:10px auto 5px;
+	color:white;
+	background-color:transparent;
+	background-repeat:no-repeat;
+	box-shadow: 0 0 10px #60317D;
+    border:none;
+	border-radius:10px;
+    cursor:pointer;
+    overflow:hidden;
+    outline:none;
+	font-family:Gogh-ExtraBoldItalic;
+	font-size:14px;
+	max-width:310.5px;
+}
+
+.hide + label {
+	width: 100%;
+	border:none;
+	border-radius:10px;
+	box-shadow: 0 0 10px #60317D;
+    padding: 5px;
+	margin-top:10px;
+	margin-bottom:10px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+	font-family:Gogh-ExtraBold;
+	font-size:14px;
+}
+
+.hide,
+.hide + label ~ .order_wrapper {
+    display: none;
+}
+
+.hide:checked + label {
+    color: #A071BD;
+}
+
+.hide:checked + label + .order_wrapper {
+    display:flex;
+	flex-wrap:wrap;
+	position:relative;
+	flex-grow:2;
+	max-width:310.5px;
+     -webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+}
+
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}
+.hide + label:before {
+    background-color: #FF71BD;
+    color: #fff;
+    content: "\002B";
+    display: block;
+    float: left;
+    font-size: 14px; 
+    font-weight: bold;
+    height: 16px;
+    line-height: 16px;
+    margin: 3px 5px;
+    text-align: center;
+    width: 16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.hide:checked + label:before {
+    content: "\2212";
+}

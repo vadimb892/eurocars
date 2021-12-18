@@ -1,0 +1,224 @@
+@font-face{
+	font-family:"Gogh-ExtraBold";
+	src:url("../fonts/Gogh-ExtraBold.otf") format("opentype");
+	font-style:normal;
+	font-weight:normal;
+}
+@font-face{
+	font-family:"Gogh-ExtraBoldItalic";
+	src:url("../fonts/Gogh-ExtraBoldItalic.otf") format("opentype");
+	font-style:normal;
+	font-weight:normal;
+}
+
+body{
+	background: #21033F;
+	color:white;
+	margin:0;
+}
+
+header{
+	height:60px;
+	width:auto;
+	background:#21033F;
+	position:-webkit-sticky;
+	position:sticky;
+	top:0;
+	z-index:100;
+}
+
+header div{
+	position:relative;
+	float:left;
+	display:flex;
+	justify-content:space-around;
+	flex-basis:auto;
+	align-items:center;
+	flex-direction:row;
+	text-align:center;
+}
+
+header div.box1{
+	padding: 20px 2% 10px 2%;
+	width:29.5%;
+}
+
+header div.box2{
+	padding: 15px 0% 10px 0%;
+	width:33%;
+}
+
+header div a{
+	position:relative;
+	display:flex;
+	justify-content:space-around;
+	flex-basis:auto;
+	flex-direction:row;
+}
+
+header div button{
+	position:relative;
+	color:white;
+	font-family:Gogh;
+	background-color:transparent;
+	background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	font-family:Gogh-ExtraBold;
+}
+
+.card{
+	position:relative;
+	border-radius:20px;
+	background: #21033F;/*#30114D;*/
+	padding-bottom:25px;
+	margin:5%;
+	box-shadow: 0 0 10px #60317D;
+}
+
+.card h3{
+	margin-left:5%;
+	margin-right:5%;
+	font-family:Gogh-ExtraBold;
+	font-size:16px;
+}
+
+.card h3:first-of-type{
+	margin-top:0;
+}
+
+.card img{
+	padding:1% 5% 1% 5%;
+}
+
+.card ul{
+	margin-left:5%;
+	margin-right:5%;
+	font-family:Gogh-ExtraBold;
+	font-size:14px;
+}
+
+ul li{
+	padding:1% 0 1% 0;
+}
+
+.card p{
+	padding:1% 5% 1% 5%;
+	font-family:Gogh-ExtraBold;
+	font-size:14px;
+}
+
+.card p:first-of-type{
+	margin-top:0;
+}
+
+.card_top{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	height:60px;
+}
+
+.card_top img{
+	padding:0;
+}
+
+.card_top h5{
+	position:absolute;
+	top:-14px;
+	font-family:Gogh-ExtraBoldItalic;
+	font-size:14px;
+}
+
+.card_top button{
+	position:relative;
+	color:white;
+	background-color:transparent;
+	background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.card *, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.demo {
+    max-width: 1024px;
+    padding: 0 20px;
+    margin: 5% 10%;
+}
+
+.hide,
+.hide + label ~ div {
+    display: none;
+}
+
+.hide + label {
+	width: 90%;
+	box-shadow: 0 0 10px #60317D;
+	border:none;
+	border-radius:10px;
+    margin: 1% 5% 1% 5%;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+	font-family:Gogh-ExtraBold;
+	font-size:14px;
+}
+
+.hide:checked + label {
+    color: #A071BD;
+}
+
+.hide:checked + label + div {
+	font-family:Gogh-ExtraBold;
+	font-size:14px;
+    display: block; 
+    background: transparent;
+    margin-left: 5%;
+	margin-right: 5%;
+    padding: 10px;
+     -webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+}
+
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}
+.hide + label:before {
+    background-color: #FF71BD;
+    color: #fff;
+    content: "\002B";
+    display: block;
+    float: left;
+    font-size: 14px; 
+    font-weight: bold;
+    height: 16px;
+    line-height: 16px;
+    margin: 3px 5px;
+    text-align: center;
+    width: 16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.hide:checked + label:before {
+    content: "\2212";
+}
+

@@ -1,0 +1,159 @@
+@font-face{
+	font-family:"Gogh-ExtraBold";
+	src:url("../fonts/Gogh-ExtraBold.otf") format("opentype");
+	font-style:normal;
+	font-weight:normal;
+}
+@font-face{
+	font-family:"Gogh-ExtraBoldItalic";
+	src:url("../fonts/Gogh-ExtraBoldItalic.otf") format("opentype");
+	font-style:normal;
+	font-weight:normal;
+}
+
+body{
+	background: #21033F;
+	color:white;
+}
+
+header{
+	height:60px;
+	width:auto;
+	background:#21033F;
+	position:-webkit-sticky;
+	position:sticky;
+	top:0;
+	z-index:100;
+}
+
+header div{
+	position:relative;
+	float:left;
+	display:flex;
+	justify-content:space-around;
+	flex-basis:auto;
+	align-items:center;
+	flex-direction:row;
+	text-align:center;
+}
+
+header div.box1{
+	padding: 20px 2% 10px 2%;
+	width:29.5%;
+}
+
+header div.box2{
+	padding: 15px 0% 10px 0%;
+	width:33%;
+}
+
+header div a{
+	position:relative;
+	display:flex;
+	justify-content:space-around;
+	flex-basis:auto;
+	flex-direction:row;
+}
+
+header div button{
+	position:relative;
+	color:white;
+	font-family:Gogh;
+	background-color:transparent;
+	background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	font-family:Gogh-ExtraBold;
+}
+
+.card{
+	position:relative;
+	border-radius:20px;
+	background: #21033F;/*#30114D;*/
+	padding-bottom:25px;
+	margin:5%;
+	box-shadow: 0 0 10px #60317D;
+}
+
+.card_top{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	height:60px;
+}
+
+.card_top h5{
+	position:absolute;
+	top:-15px;
+	font-family:Gogh-ExtraBoldItalic;
+	font-size:14px;
+}
+
+.card_top button{
+	position:relative;
+	color:white;
+	background-color:transparent;
+	background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+
+/* стили для элемента body */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+	sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+/* дополнительные стили для этого примера */
+.slider__items {
+  counter-reset: slide;
+}
+
+.slider__item {
+  counter-increment: slide;
+}
+
+.slider__item>div::before {
+  content: counter(slide);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #fff;
+  font-style: italic;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+table{
+	width:100%;
+	padding:5% 14% 5% 14%;
+	font-family:Gogh-ExtraBold;
+	font-size:14px;
+}
+
+th{
+	position:relative;
+	font-size:15px;
+}
+
+td{
+	padding:5px;
+}
+
+tr{
+	height:35px;
+}
+
+tr :first-child{
+	width:80%;
+}
+
+tr :last-child{
+	width:20%;
+}

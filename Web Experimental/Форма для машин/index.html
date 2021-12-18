@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>New car form</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header>
+	<div class="box1">
+		<a>
+			<img src="sidebar.png" width="25px">
+		</a>
+		<a>
+			<img src="basket.png" width="25px">
+		</a>
+	</div>
+	<div class="box2">
+		<img src="logo.png" width="25px">
+	</div>
+	<div class="box1">
+		<button>UK</button>
+		<button>$</button>
+		<a>
+			<img src="account.png" width="15px">
+		</a>
+	</div>
+  </header>
+  
+  <div class="card">
+	<div class="card_top">
+	  	<button>
+			<img src="arrow.png" width=20px>
+		</button>
+		<h5>Нове авто</h5>
+		<button>
+			<img src="pencil.png" width=20px style="filter:contrast(0.2);">
+		</button>
+	</div>
+	<div class="wrapper">
+		<div class="card_column" style="width:45%">
+			<p>Тип авто</p>
+			<p>Марка</p>
+			<p>Модель</p>
+			<p>Ціна</p>
+			<p>Рік авто</p>
+			<p>Локація</p>
+			<p>Категорія</p>
+			<p>Тип кузова</p>
+			<p>Об'єм двигуна</p>
+			<p>Колір</p>
+		</div>
+		<div class="card_column" style="width:55%">
+			<form id="new car"></form>
+				<input type="list" list="car_type" form="new car" required>
+				<datalist id="car_type">
+				<option value="Спорткар">
+				<option value="Вантажівка">
+				</datalist>
+				<input type="list" list="brend" form="new car" required>
+				<input type="text" form="new car" required>
+				<input type="number" min="0" max="100000000" step="1" form="new car" required>
+				<input type="number" min="1900" max="2022" step="1" value="2021" form="new car" required>
+				<input type="text" form="new car" required>
+				<input type="text" form="new car" required>
+				<input type="list" list="body type"  form="new car" required>
+				<input type="number" min="0.1" max="20" step="0.1"  form="new car" required>
+				<input type="text" form="new car" required>
+				</datalist>
+		</div>
+		<input class="hide" id="1" type="checkbox">
+		<label for="1">
+			Параметри для оренди
+		</label>
+		<div class="order_wrapper">
+			<div class="card_column" style="width:45%">
+				<p>Місце оренди</p>
+				<p>Ціна за період</p>
+			</div>
+			<div class="card_column" style="width:55%">
+				<input type="text" form="new car">
+				<input type="number" min="0.01" max="10000" step="0.01" form="new car">
+			</div>
+		</div>
+	</div>
+	<input id="sub" type="submit" form="new car" value="Додати авто">
+  </div>
+  
+  <datalist id="brend">
+	<option value="Ford">
+	<option value="GMC">
+	<option value="Renault">
+	<option value="Peugeot">
+	<option value="Volvo">
+	<option value="VAZ">
+	<option value="Subaru">
+	<option value="Hyundai">
+	<option value="Honda">
+	<option value="Toyota">
+	<option value="Cadillac">
+	<option value="Mercedec">
+	<option value="Rolls-Royce">
+	<option value="BMW">
+	<option value="Tesla">
+  </datalist>
+  
+  <datalist id="body type">
+	<option value="Седан">
+	<option value="Хетчбек">
+	<option value="Купе">
+	<option value="Універсал">
+	<option value="Лімузин">
+	<option value="Мінівен">
+	<option value="Гардтоп">
+	<option value="Ліфтбек">
+	<option value="Кабріолет">
+	<option value="Ландо">
+	<option value="Родстер">
+	<option value="Пікап">
+	<option value="Фургон">
+  </datalist>
+  
+</body>

@@ -1,0 +1,9 @@
+﻿  task3.cpp
+C:\Users\vadim\source\repos\Lab2\Lab2\task3.cpp(38,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\vadim\source\repos\Lab2\Lab2\task3.cpp(56,14): warning C4477: 'wprintf' : format string '%ld' requires an argument of type 'long', but variadic argument 2 has type 'LONGLONG'
+C:\Users\vadim\source\repos\Lab2\Lab2\task3.cpp(56,14): message : consider using '%lld' in the format string
+C:\Users\vadim\source\repos\Lab2\Lab2\task3.cpp(56,14): message : consider using '%I64d' in the format string
+C:\Users\vadim\source\repos\Lab2\Lab2\task3.cpp(56,14): warning C4477: 'wprintf' : format string '%ld' requires an argument of type 'long', but variadic argument 3 has type 'FILETIME'
+  task4.cpp
+  Generating Code...
+  Lab2.vcxproj -> C:\Users\vadim\source\repos\Lab2\Debug\Lab2.exe
